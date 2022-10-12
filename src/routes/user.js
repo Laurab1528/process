@@ -1,7 +1,6 @@
 import express from "express";
 const router = express.Router();
 import session from 'express-session';
-import passport from "passport";
 
 router.get('/login', async(req, res) => {
     if (req.session.login) {
